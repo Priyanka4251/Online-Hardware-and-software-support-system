@@ -23,7 +23,7 @@ Roles of Employee:
 •	They can see all complain history raised by him/her.
 •	Employee can change his/her password.
 
-=================================DATABASE==============================================================
+==========================DATABASE=======================
  1) Created the database name:project1.
 +--------------------+
 | Database           |
@@ -36,7 +36,7 @@ Roles of Employee:
 | sys                |
 | web19              |
 +--------------------+
-=======================================TABLES=========================================================
+=============================TABLES==================================
 
 2) Create all the tables as per the project requirements.
 
@@ -82,7 +82,7 @@ Relation between enployee and engineer and problems;
   	   FOREIGN KEY (reid) REFERENCES engineer (Engid)
    	  );
 
-================================  CONNECTION  =========================================================
+========================  CONNECTION  ===================================
 
 3)Create a Separated Unitily package fro making a database connection...
 
@@ -94,13 +94,13 @@ Relation between enployee and engineer and problems;
         
         
 
-=======================================  Bean CLASSES  ===========================================
+=======================  Bean CLASSES  =============================
 4)      =>Employee bean
         =>Engineer bean
         =>Hod bean
         =>problem bean
 
-================================  DAO Interfaces and their implentation classes ================= 
+=========  DAO Interfaces and their implentation classes ===========
 
 5)
 	  =>EngineerDao (Interface)
@@ -116,7 +116,7 @@ Relation between enployee and engineer and problems;
 	  =>ProblemsDaoImpl (Class)    
 	  
 	  
-==================================  Exceptions ==================================================
+=======  Exceptions ==============================================
 
 6)    
 	  =>EngineerException
@@ -130,7 +130,7 @@ Relation between enployee and engineer and problems;
 
       =>ProblemsException
 	 	  
-===================================  Usecases  ====================================================
+=================  Usecases  ==========================================
 
 7)  
 
