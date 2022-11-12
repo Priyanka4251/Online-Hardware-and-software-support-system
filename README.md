@@ -46,16 +46,6 @@ Roles of Employee:
 	username varchar(15),
 	password varchar(15)
 	);
-	
-
-
-mysql> desc hod;
-+----------+-------------+------+-----+---------+-------+
-| Field    | Type        | Null | Key | Default | Extra |
-+----------+-------------+------+-----+---------+-------+
-| username | varchar(15) | YES  |     | NULL    |       |
-| password | varchar(15) | YES  |     | NULL    |       |
-+----------+-------------+------+-----+---------+-------+
 
 2.2)create table engineer
 	  (
@@ -65,18 +55,6 @@ mysql> desc hod;
 	  EngPasswor varchar(15),
 	  EngCategory varchar(20)
 	  );
-
-	
-	mysql> desc engineer;
-+-------------+-------------+------+-----+---------+----------------+
-| Field       | Type        | Null | Key | Default | Extra          |
-+-------------+-------------+------+-----+---------+----------------+
-| EngId       | int         | NO   | PRI | NULL    | auto_increment |
-| EngName     | varchar(15) | YES  |     | NULL    |                |
-| EngUserName | varchar(15) | YES  | UNI | NULL    |                |
-| EngPassword | varchar(15) | YES  |     | NULL    |                |
-| EngCategory | varchar(20) | YES  |     | NULL    |                |
-+-------------+-------------+------+-----+---------+----------------+
  
  2.3)create table Problems
 	(
@@ -85,16 +63,6 @@ mysql> desc hod;
 	pcategory varchar(15)
 	);
 
-mysql> desc problems;
-+-----------+-------------+------+-----+---------+----------------+
-| Field     | Type        | Null | Key | Default | Extra          |
-+-----------+-------------+------+-----+---------+----------------+
-| pid       | int         | NO   | PRI | NULL    | auto_increment |
-| pname     | varchar(20) | YES  |     | NULL    |                |
-| pcategory | varchar(15) | YES  |     | NULL    |                |
-| status    | varchar(15) | YES  |     | NULL    |                |
-+-----------+-------------+------+-----+---------+----------------+
-
 2.4)create table employee
 	  (
 	  empID primary key auto_increment,
@@ -102,19 +70,6 @@ mysql> desc problems;
 	  empUserName varchar(15) unique,
 	  empPasswor varchar(15)
 	  );
-
-mysql> desc employee;
-+-------------+-------------+------+-----+---------+----------------+
-| Field       | Type        | Null | Key | Default | Extra          |
-+-------------+-------------+------+-----+---------+----------------+
-| empID       | int         | NO   | PRI | NULL    | auto_increment |
-| empName     | varchar(15) | YES  |     | NULL    |                |
-| empUserName | varchar(15) | YES  | UNI | NULL    |                |
-| empPassword | varchar(15) | YES  |     | NULL    |                |
-+-------------+-------------+------+-----+---------+----------------+
-
-
-
 -------------------------------------------------------
 Relation between enployee and engineer and problems;
 ------------------------------------------------------
@@ -126,14 +81,6 @@ Relation between enployee and engineer and problems;
    	  FOREIGN KEY (rpid) REFERENCES problems(pid),
   	   FOREIGN KEY (reid) REFERENCES engineer (Engid)
    	  );
-
-mysql> desc employee_engineer;
-+-------+------+------+-----+---------+-------+
-| Field | Type | Null | Key | Default | Extra |
-+-------+------+------+-----+---------+-------+
-| rpid  | int  | YES  | MUL | NULL    |       |
-| reid  | int  | YES  | MUL | NULL    |       |
-+-------+------+------+-----+---------+-------+
 
 ================================  CONNECTION  =========================================================
 
