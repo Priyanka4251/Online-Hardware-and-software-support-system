@@ -30,7 +30,7 @@ public class MainUseCase {
 		
 		while(true) {
 
-			System.out.println("Welcome to LLD of Sortware and Hardware Online System Desingn by Vaibhav Ghawale ");
+			System.out.println("Welcome to LLD of Sortware and Hardware Online System Desingn by Priyanka Dhar ");
 			System.out.println("Enter Your Choice");
 			System.out.println("1.HOD services... ");
 			System.out.println("2.Engineer services...");
