@@ -16,8 +16,8 @@ employee must report to this department. Engineers from this department take car
 	<h4 style="font-weight: bold;">2. Engineer</h4>
 	<h4 style="font-weight: bold;">3. Employee</h4>
 	
-<img style="width: 100%;" src="https://github.com/thecodervaibhav/cowardly-wine-9340/blob/main/m.png" alt="">
-
+<!-- <img style="width: 100%;" src="https://github.com/thecodervaibhav/cowardly-wine-9340/blob/main/m.png" alt="">
+ -->
 
 <h3>Roles for the HOD:</h3>
 <p>•	Login into the system </p>
